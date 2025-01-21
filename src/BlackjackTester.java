@@ -5,13 +5,13 @@ public class BlackjackTester {
         System.out.println(b.getName());
         System.out.println(b);
 
-        Card something = new Card("diamonds", 10);
+        Card something = new Card("diamonds", 1);
 
         b.addCard(something);
 
         System.out.println(b);
 
-        Card otherThing = new Card("spades", 13);
+        Card otherThing = new Card("spades", 9);
 
         b.addCard(otherThing);
 
@@ -19,6 +19,17 @@ public class BlackjackTester {
 
         System.out.println(b.getScore());
 
+        Card jack = new Card("spades", 11);
+        b.addCard(jack);
 
+
+        b.addCard(something);
+        System.out.println(b);
+
+        b.addCard(something);
+        System.out.println(b);
+
+        b.addCard(something);
+        System.out.println(b);
     }
 }
