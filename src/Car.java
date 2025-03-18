@@ -11,7 +11,7 @@ public class Car {
     String color;
 
     //all instance variables should be private
-    //-use the private modifier to protect data so that it can
+    //-use the private modifgitier to protect data so that it can
     //only be accessed in ways you intend
     //-a car's total miles should only ever increase so the tester
     //class should not be able to set it to a lower number
