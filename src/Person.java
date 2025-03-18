@@ -6,6 +6,7 @@ public class Person {
     private int age;
     private boolean hair;
 
+    //shared by the class and all objects of the class
     static int numPeople = 0;
 
     public Person(String name, int a, boolean h) {
