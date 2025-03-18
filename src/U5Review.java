@@ -97,8 +97,9 @@ public class U5Review {
         System.out.println(a);
         int newAge = 30;
         changeAge(a, newAge);
+        //objects are affected by methods
         System.out.println(a);
-        //the value of newAge is NOT affected by the method call
+        //primitives are NOT affected by the method call
         System.out.println("newage:" + newAge);
 
         System.out.println();
@@ -108,7 +109,7 @@ public class U5Review {
         //to the same object
         //-if you have a shortcut to a file on your computer, you can
         //change the file from either the shortcut or the original,
-        //and you'll see the changes from both the shortcut and orignal
+        //and you'll see the changes from both the shortcut and original
         Person c = a;
 
         c.setAge(50);
@@ -131,9 +132,9 @@ public class U5Review {
 
     }
 
-    //objects passed to methods can be changed by the method
-    //primitive data (int, double, boolean, Strings) would not get changed
-    //by the method
+    //objects passed to methods get changed by the method
+    //primitive data (int, double, boolean, Strings) do not get changed
+    //outside of the method
     public static void changeAge(Person p, int a) {
         a = -100;
         p.setAge(a);
