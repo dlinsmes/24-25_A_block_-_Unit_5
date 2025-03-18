@@ -23,7 +23,7 @@ public class Person {
     //wouldn't work when the above constructor is defined
     public Person() {
 
-        //regardless of parans, a constructor
+        //regardless of params, a constructor
         //should initialize all instance vars
         name = "greg";
         age = 2;
